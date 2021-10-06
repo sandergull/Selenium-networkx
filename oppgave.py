@@ -10,50 +10,6 @@ import time
 import random as RC
 import re
 import urllib.parse
-#oppg 1.1
-"""
-G = nx.karate_club_graph()
-print(G.nodes,G.edges)
-"""
-#oppg 1.2
-'''
-G = nx.karate_club_graph()
-var = nx.get_node_attributes(G, "club")
-color_list = []
-for y in var:
-    if var[y]=="Mr. Hi":
-        color_list.append("green")
-    if var[y]=="Officer":
-        color_list.append("blue")
-print(color_list)
-nx.draw(G, node_color=color_list, with_labels=True)
-plt.show()
-'''
-#oppg 1.3
-'''
-G = nx.karate_club_graph()
-var = nx.get_node_attributes(G, "club")
-print(nx.dijkstra_path(G,24,16))
-'''
-#oppg 1.4
-'''
-G = nx.karate_club_graph()
-layout = nx.spring_layout(G)
-color_list = []
-for x in G.nodes(data=True):
-    if (16) in x:
-        color_list.append("red")
-    elif (14) in x:
-        color_list.append("red")
-    elif {'club': 'Mr. Hi'} in x:
-        color_list.append("green")
-    else:
-        color_list.append("blue")
-
-nx.draw(G, layout, node_color=color_list, with_labels=True)
-plt.show()
-'''
-#oppg 2
 
 firefox_options = Options()
 
